@@ -17,6 +17,8 @@ coil = "2.7.0"
 retrofit = "2.9.0"
 moshi = "1.15.1"
 retrofitCoroutines = "0.9.2"
+ksp = "1.9.20-1.0.14"
+
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -59,3 +61,4 @@ jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin"
 ucb-android-library= { id = "ucb.android.library", version="unspecified"}
 ucb-jvm-library= { id = "ucb.jvm.library", version="unspecified"}
 kapt = {id = "org.jetbrains.kotlin.kapt", version.ref="kotlin"}
+ksp = {id = "com.google.devtools.ksp", version.ref="ksp"}

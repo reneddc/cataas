@@ -1,0 +1,5 @@
+com.calyr.ui.test.ui-androidTest-0 /Users/calyr/AndroidStudioProjects/FrankyApp/core/ui/build/generated/res/resValues/androidTest/debug
+com.calyr.ui.test.ui-mergeDebugAndroidTestResources-1 /Users/calyr/AndroidStudioProjects/FrankyApp/core/ui/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.calyr.ui.test.ui-mergeDebugAndroidTestResources-2 /Users/calyr/AndroidStudioProjects/FrankyApp/core/ui/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.calyr.ui.test.ui-debugAndroidTest-3 /Users/calyr/AndroidStudioProjects/FrankyApp/core/ui/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources
+com.calyr.ui.test.ui-debug-4 /Users/calyr/AndroidStudioProjects/FrankyApp/core/ui/build/intermediates/packaged_res/debug/packageDebugResources

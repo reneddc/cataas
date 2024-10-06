@@ -1,0 +1,15 @@
+com.calyr.data.test.data-room-ktx-2.6.1-0 /Users/calyr/.gradle/caches/transforms-4/43749ffd2bb23f1c4b00eb720981ed92/transformed/room-ktx-2.6.1/res
+com.calyr.data.test.data-room-runtime-2.6.1-1 /Users/calyr/.gradle/caches/transforms-4/44125d1481614d13dba17c9df03445f6/transformed/room-runtime-2.6.1/res
+com.calyr.data.test.data-room-paging-2.6.1-2 /Users/calyr/.gradle/caches/transforms-4/6c2a4eb409803b8c0133bb90919f3aad/transformed/room-paging-2.6.1/res
+com.calyr.data.test.data-core-runtime-2.2.0-3 /Users/calyr/.gradle/caches/transforms-4/ae9488798ec3a96706102f481d3f01f0/transformed/core-runtime-2.2.0/res
+com.calyr.data.test.data-annotation-experimental-1.1.0-rc01-4 /Users/calyr/.gradle/caches/transforms-4/b4f648bce1d8dd59249ff9e49629b6e1/transformed/annotation-experimental-1.1.0-rc01/res
+com.calyr.data.test.data-room-guava-2.6.1-5 /Users/calyr/.gradle/caches/transforms-4/b7a4e327f96a725aac1a76ab4730c050/transformed/room-guava-2.6.1/res
+com.calyr.data.test.data-room-rxjava2-2.6.1-6 /Users/calyr/.gradle/caches/transforms-4/c678569aa783fa102f4c03fb16be3b4e/transformed/room-rxjava2-2.6.1/res
+com.calyr.data.test.data-sqlite-2.4.0-7 /Users/calyr/.gradle/caches/transforms-4/eb9e3027ca40e7013cc6c84e1fbfe165/transformed/sqlite-2.4.0/res
+com.calyr.data.test.data-room-rxjava3-2.6.1-8 /Users/calyr/.gradle/caches/transforms-4/ecf8bffbbb655610b95011994b47aaa1/transformed/room-rxjava3-2.6.1/res
+com.calyr.data.test.data-sqlite-framework-2.4.0-9 /Users/calyr/.gradle/caches/transforms-4/f5491fa2b82c1d5225080f3cd84a8603/transformed/sqlite-framework-2.4.0/res
+com.calyr.data.test.data-androidTest-10 /Users/calyr/AndroidStudioProjects/FrankyApp/core/data/build/generated/res/resValues/androidTest/debug
+com.calyr.data.test.data-mergeDebugAndroidTestResources-11 /Users/calyr/AndroidStudioProjects/FrankyApp/core/data/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.calyr.data.test.data-mergeDebugAndroidTestResources-12 /Users/calyr/AndroidStudioProjects/FrankyApp/core/data/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.calyr.data.test.data-debugAndroidTest-13 /Users/calyr/AndroidStudioProjects/FrankyApp/core/data/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources
+com.calyr.data.test.data-debug-14 /Users/calyr/AndroidStudioProjects/FrankyApp/core/data/build/intermediates/packaged_res/debug/packageDebugResources

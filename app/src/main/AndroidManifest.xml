@@ -13,37 +13,40 @@
         android:theme="@style/Theme.FrankyApp"
         tools:targetApi="31">
         <activity
-            android:name=".ScaffoldActivity"
+            android:name=".BookActivity"
             android:exported="true"
-            android:label="@string/title_activity_scaffold"
+            android:label="@string/title_activity_book"
             android:theme="@style/Theme.FrankyApp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".ScaffoldActivity"
+            android:exported="true"
+            android:label="@string/title_activity_scaffold"
+            android:theme="@style/Theme.FrankyApp">
+
         </activity>
         <activity
             android:name=".BusinessActivity"
             android:exported="true"
             android:label="@string/title_activity_business"
             android:theme="@style/Theme.FrankyApp">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".WelcomeActivity"
             android:exported="true"
             android:label="@string/title_activity_welcome"
-            android:theme="@style/Theme.FrankyApp"></activity>
+            android:theme="@style/Theme.FrankyApp" />
         <activity
             android:name=".BackgroundColorActivity"
             android:exported="true"
             android:label="@string/title_activity_background_color"
-            android:theme="@style/Theme.FrankyApp"></activity>
+            android:theme="@style/Theme.FrankyApp" />
         <activity
             android:name=".GithubChipActivity"
             android:exported="true"

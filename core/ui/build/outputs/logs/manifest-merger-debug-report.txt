@@ -1,0 +1,16 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/calyr/AndroidStudioProjects/FrankyApp/core/ui/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest13523482986806162582.xml:2:13-83
+INJECTED from /Users/calyr/AndroidStudioProjects/FrankyApp/core/ui/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest13523482986806162582.xml:2:13-83
+	package
+		INJECTED from /Users/calyr/AndroidStudioProjects/FrankyApp/core/ui/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest13523482986806162582.xml
+	xmlns:android
+		ADDED from /Users/calyr/AndroidStudioProjects/FrankyApp/core/ui/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest13523482986806162582.xml:2:23-81
+uses-sdk
+INJECTED from /Users/calyr/AndroidStudioProjects/FrankyApp/core/ui/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest13523482986806162582.xml reason: use-sdk injection requested
+INJECTED from /Users/calyr/AndroidStudioProjects/FrankyApp/core/ui/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest13523482986806162582.xml
+INJECTED from /Users/calyr/AndroidStudioProjects/FrankyApp/core/ui/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest13523482986806162582.xml
+	android:targetSdkVersion
+		INJECTED from /Users/calyr/AndroidStudioProjects/FrankyApp/core/ui/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest13523482986806162582.xml
+	android:minSdkVersion
+		INJECTED from /Users/calyr/AndroidStudioProjects/FrankyApp/core/ui/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest13523482986806162582.xml

@@ -1,0 +1,5 @@
+com.calyr.network.test.network-androidTest-0 /Users/calyr/AndroidStudioProjects/FrankyApp/core/network/build/generated/res/resValues/androidTest/debug
+com.calyr.network.test.network-mergeDebugAndroidTestResources-1 /Users/calyr/AndroidStudioProjects/FrankyApp/core/network/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.calyr.network.test.network-mergeDebugAndroidTestResources-2 /Users/calyr/AndroidStudioProjects/FrankyApp/core/network/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.calyr.network.test.network-debugAndroidTest-3 /Users/calyr/AndroidStudioProjects/FrankyApp/core/network/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources
+com.calyr.network.test.network-debug-4 /Users/calyr/AndroidStudioProjects/FrankyApp/core/network/build/intermediates/packaged_res/debug/packageDebugResources

@@ -12,5 +12,6 @@
     <string name="title_activity_github_chip">ChipItem</string>
     <string name="title_activity_background_color">BackgroundColor</string>
     <string name="title_activity_scaffold">ScaffoldActivity</string>
+    <string name="title_activity_book">BookActivity</string>
 
 </resources>

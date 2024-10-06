@@ -74,5 +74,6 @@ dependencies {
     implementation(project(":core:network"))
     implementation(project(":data"))
     implementation("androidx.compose.ui:ui-text-google-fonts:1.6.8")
+    implementation(project(":core:data"))
 
 }

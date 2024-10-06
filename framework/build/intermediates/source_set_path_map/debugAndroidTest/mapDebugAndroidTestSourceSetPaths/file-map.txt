@@ -1,0 +1,5 @@
+com.calyrsoft.framework.test.framework-androidTest-0 /Users/calyr/AndroidStudioProjects/FrankyApp/framework/build/generated/res/resValues/androidTest/debug
+com.calyrsoft.framework.test.framework-mergeDebugAndroidTestResources-1 /Users/calyr/AndroidStudioProjects/FrankyApp/framework/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.calyrsoft.framework.test.framework-mergeDebugAndroidTestResources-2 /Users/calyr/AndroidStudioProjects/FrankyApp/framework/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.calyrsoft.framework.test.framework-debugAndroidTest-3 /Users/calyr/AndroidStudioProjects/FrankyApp/framework/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources
+com.calyrsoft.framework.test.framework-debug-4 /Users/calyr/AndroidStudioProjects/FrankyApp/framework/build/intermediates/packaged_res/debug/packageDebugResources

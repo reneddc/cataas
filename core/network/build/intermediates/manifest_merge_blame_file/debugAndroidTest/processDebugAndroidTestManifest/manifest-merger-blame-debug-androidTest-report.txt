@@ -1,0 +1,38 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.calyr.network.test" >
+4
+5    <uses-sdk
+5-->/Users/calyr/AndroidStudioProjects/FrankyApp/core/network/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest6529225224134390966.xml:5:5-74
+6        android:minSdkVersion="24"
+6-->/Users/calyr/AndroidStudioProjects/FrankyApp/core/network/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest6529225224134390966.xml:5:15-41
+7        android:targetSdkVersion="24" />
+7-->/Users/calyr/AndroidStudioProjects/FrankyApp/core/network/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest6529225224134390966.xml:5:42-71
+8
+9    <instrumentation
+9-->/Users/calyr/AndroidStudioProjects/FrankyApp/core/network/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest6529225224134390966.xml:11:5-15:72
+10        android:name="android.test.InstrumentationTestRunner"
+10-->/Users/calyr/AndroidStudioProjects/FrankyApp/core/network/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest6529225224134390966.xml:11:22-75
+11        android:functionalTest="false"
+11-->/Users/calyr/AndroidStudioProjects/FrankyApp/core/network/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest6529225224134390966.xml:14:22-52
+12        android:handleProfiling="false"
+12-->/Users/calyr/AndroidStudioProjects/FrankyApp/core/network/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest6529225224134390966.xml:13:22-53
+13        android:label="Tests for com.calyr.network.test"
+13-->/Users/calyr/AndroidStudioProjects/FrankyApp/core/network/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest6529225224134390966.xml:15:22-70
+14        android:targetPackage="com.calyr.network.test" />
+14-->/Users/calyr/AndroidStudioProjects/FrankyApp/core/network/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest6529225224134390966.xml:12:22-68
+15
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->[:core:network] /Users/calyr/AndroidStudioProjects/FrankyApp/core/network/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:5-67
+16-->[:core:network] /Users/calyr/AndroidStudioProjects/FrankyApp/core/network/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:22-64
+17
+18    <application
+18-->/Users/calyr/AndroidStudioProjects/FrankyApp/core/network/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest6529225224134390966.xml:7:5-9:19
+19        android:debuggable="true"
+20        android:extractNativeLibs="false" >
+21        <uses-library android:name="android.test.runner" />
+21-->/Users/calyr/AndroidStudioProjects/FrankyApp/core/network/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest6529225224134390966.xml:8:9-60
+21-->/Users/calyr/AndroidStudioProjects/FrankyApp/core/network/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest6529225224134390966.xml:8:23-57
+22    </application>
+23
+24</manifest>
