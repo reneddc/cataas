@@ -14,7 +14,7 @@
 .externalNativeBuild
 .cxx
 local.properties
-build-logic/convention/build
-core/data/build
-core/network/build
-data/build
+build-logic/convention/build/
+core/data/build/
+core/network/build/
+data/build/
