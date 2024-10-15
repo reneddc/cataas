@@ -64,3 +64,4 @@ ucb-android-library= { id = "ucb.android.library", version="unspecified"}
 ucb-jvm-library= { id = "ucb.jvm.library", version="unspecified"}
 kapt = {id = "org.jetbrains.kotlin.kapt", version.ref="kotlin"}
 ksp = {id = "com.google.devtools.ksp", version.ref="ksp"}
+#kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }

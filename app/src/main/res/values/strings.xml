@@ -14,5 +14,6 @@
     <string name="title_activity_scaffold">ScaffoldActivity</string>
     <string name="title_activity_book">BookActivity</string>
     <string name="title_activity_counter">CounterActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
 
 </resources>

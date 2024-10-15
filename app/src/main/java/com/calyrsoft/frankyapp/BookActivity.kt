@@ -2,30 +2,29 @@ package com.calyrsoft.frankyapp
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.tooling.preview.Preview
-import com.calyr.data.AppRoomDatabase
+import androidx.compose.ui.platform.LocalLifecycleOwner
+import androidx.lifecycle.Observer
+
 import com.calyr.data.Book
-import com.calyr.data.BookRepository
 import com.calyrsoft.frankyapp.ui.theme.AppTheme
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.MainScope
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
+
 
 class BookActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,30 +44,28 @@ class BookActivity : ComponentActivity() {
 }
 
 
-@SuppressLint("CoroutineCreationDuringComposition")
 @Composable
 fun Greeting2(name: String, modifier: Modifier = Modifier) {
+    var listOfBooks by remember { mutableStateOf( listOf<Book>())}
     val context = LocalContext.current
-
-    CoroutineScope(Dispatchers.IO).launch {
-            val repository = BookRepository(context)
-            repository.insert(Book("the best seller: Android"))
-            val lista = repository.getListBooks()
-            lista.forEach {
-                Log.d("DBTEST","Id book = ${it.id}, Title: ${it.title}")
-            }
+    val bookViewModel = BookViewModel()
+    bookViewModel.loadBook(context)
+    val lifecycleOwner = LocalLifecycleOwner.current
+    fun updateUi(books: List<Book>) {
+        listOfBooks = books
     }
-
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
+    bookViewModel.books.observe(
+        lifecycleOwner,
+        Observer(::updateUi)
     )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview2() {
-    AppTheme {
-        Greeting2("Android")
+    LazyColumn(
+        modifier = Modifier.fillMaxSize(),
+        verticalArrangement = Arrangement.Center
+    ){
+        items( listOfBooks.size) {
+            Text(
+                text = "Book ${listOfBooks[it].title}"
+            )
+        }
     }
 }
