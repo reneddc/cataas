@@ -5,7 +5,7 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 
 object RetrofitBuilder {
 
-    private const val BASE_URL = "https://api.github.com"
+    private const val BASE_URL = "https://cataas.com"
 
     private fun getRetrofit(): Retrofit {
         return Retrofit.Builder()

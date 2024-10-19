@@ -13,27 +13,27 @@
         android:theme="@style/Theme.FrankyApp"
         tools:targetApi="31">
         <activity
-            android:name=".login.LoginActivity"
+            android:name=".Room"
             android:exported="true"
-            android:label="@string/title_activity_login"
+            android:label="@string/title_activity_room"
             android:theme="@style/Theme.FrankyApp">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
         </activity>
         <activity
             android:name=".CounterActivity"
             android:exported="true"
             android:label="@string/title_activity_counter"
-            android:theme="@style/Theme.FrankyApp"></activity>
+            android:theme="@style/Theme.FrankyApp" />
         <activity
             android:name=".BookActivity"
             android:exported="true"
             android:label="@string/title_activity_book"
-            android:theme="@style/Theme.FrankyApp">
-        </activity>
+            android:theme="@style/Theme.FrankyApp"></activity>
         <activity
             android:name=".ScaffoldActivity"
             android:exported="true"

@@ -1,9 +1,9 @@
 package com.calyr.network
 
-class GithubRemoteDataSource(
-    val retrofiService: RetrofitBuilder
+class CatsRemoteDataSource(
+    private val retrofitService: RetrofitBuilder
 ) {
-    suspend fun getAvatarInfo(githubLogin: String): AvatarResponseDto {
-        return retrofiService.apiService.getInfoAvatar(githubLogin)
+    suspend fun getCatsInfo(): List<ResponseDto> {
+        return retrofitService.apiService.getCatsInfo()
     }
 }

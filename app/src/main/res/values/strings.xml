@@ -15,5 +15,6 @@
     <string name="title_activity_book">BookActivity</string>
     <string name="title_activity_counter">CounterActivity</string>
     <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_room">Room</string>
 
 </resources>

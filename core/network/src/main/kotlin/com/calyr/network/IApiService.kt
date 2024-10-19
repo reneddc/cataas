@@ -1,11 +1,9 @@
 package com.calyr.network
 
 import retrofit2.http.GET
-import retrofit2.http.Path
-
 
 interface IApiService {
 
-    @GET("/users/{githubLogin}")
-    suspend fun getInfoAvatar(@Path("githubLogin") githubLogin: String): AvatarResponseDto
+    @GET("/api/cats?limit=10&skip=0")
+    suspend fun getCatsInfo(): List<ResponseDto>
 }

@@ -26,22 +26,22 @@ import javax.annotation.processing.Generated;
 @Generated("androidx.room.RoomProcessor")
 @SuppressWarnings({"unchecked", "deprecation"})
 public final class AppRoomDatabase_Impl extends AppRoomDatabase {
-  private volatile IBookDao _iBookDao;
+  private volatile ICatDao _iCatDao;
 
   @Override
   @NonNull
   protected SupportSQLiteOpenHelper createOpenHelper(@NonNull final DatabaseConfiguration config) {
-    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(config, new RoomOpenHelper.Delegate(1) {
+    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(config, new RoomOpenHelper.Delegate(2) {
       @Override
       public void createAllTables(@NonNull final SupportSQLiteDatabase db) {
-        db.execSQL("CREATE TABLE IF NOT EXISTS `book_table` (`title` TEXT NOT NULL, `id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL)");
+        db.execSQL("CREATE TABLE IF NOT EXISTS `cat_table` (`id` TEXT NOT NULL, `mimetype` TEXT NOT NULL, `size` INTEGER NOT NULL, `tags` TEXT NOT NULL, PRIMARY KEY(`id`))");
         db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '4e2aafc31572653ddfce3d3d05c8a5a0')");
+        db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '5e45e7f6ca02b7356c2ff851bbca2f1b')");
       }
 
       @Override
       public void dropAllTables(@NonNull final SupportSQLiteDatabase db) {
-        db.execSQL("DROP TABLE IF EXISTS `book_table`");
+        db.execSQL("DROP TABLE IF EXISTS `cat_table`");
         final List<? extends RoomDatabase.Callback> _callbacks = mCallbacks;
         if (_callbacks != null) {
           for (RoomDatabase.Callback _callback : _callbacks) {
@@ -85,21 +85,23 @@ public final class AppRoomDatabase_Impl extends AppRoomDatabase {
       @NonNull
       public RoomOpenHelper.ValidationResult onValidateSchema(
           @NonNull final SupportSQLiteDatabase db) {
-        final HashMap<String, TableInfo.Column> _columnsBookTable = new HashMap<String, TableInfo.Column>(2);
-        _columnsBookTable.put("title", new TableInfo.Column("title", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsBookTable.put("id", new TableInfo.Column("id", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
-        final HashSet<TableInfo.ForeignKey> _foreignKeysBookTable = new HashSet<TableInfo.ForeignKey>(0);
-        final HashSet<TableInfo.Index> _indicesBookTable = new HashSet<TableInfo.Index>(0);
-        final TableInfo _infoBookTable = new TableInfo("book_table", _columnsBookTable, _foreignKeysBookTable, _indicesBookTable);
-        final TableInfo _existingBookTable = TableInfo.read(db, "book_table");
-        if (!_infoBookTable.equals(_existingBookTable)) {
-          return new RoomOpenHelper.ValidationResult(false, "book_table(com.calyr.data.Book).\n"
-                  + " Expected:\n" + _infoBookTable + "\n"
-                  + " Found:\n" + _existingBookTable);
+        final HashMap<String, TableInfo.Column> _columnsCatTable = new HashMap<String, TableInfo.Column>(4);
+        _columnsCatTable.put("id", new TableInfo.Column("id", "TEXT", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsCatTable.put("mimetype", new TableInfo.Column("mimetype", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsCatTable.put("size", new TableInfo.Column("size", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsCatTable.put("tags", new TableInfo.Column("tags", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysCatTable = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesCatTable = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoCatTable = new TableInfo("cat_table", _columnsCatTable, _foreignKeysCatTable, _indicesCatTable);
+        final TableInfo _existingCatTable = TableInfo.read(db, "cat_table");
+        if (!_infoCatTable.equals(_existingCatTable)) {
+          return new RoomOpenHelper.ValidationResult(false, "cat_table(com.calyr.data.Cat).\n"
+                  + " Expected:\n" + _infoCatTable + "\n"
+                  + " Found:\n" + _existingCatTable);
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "4e2aafc31572653ddfce3d3d05c8a5a0", "8c8c3bcac736b605373a872f0e63b280");
+    }, "5e45e7f6ca02b7356c2ff851bbca2f1b", "3eb1949abb746ac688c1f916e6093340");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(config.context).name(config.name).callback(_openCallback).build();
     final SupportSQLiteOpenHelper _helper = config.sqliteOpenHelperFactory.create(_sqliteConfig);
     return _helper;
@@ -110,7 +112,7 @@ public final class AppRoomDatabase_Impl extends AppRoomDatabase {
   protected InvalidationTracker createInvalidationTracker() {
     final HashMap<String, String> _shadowTablesMap = new HashMap<String, String>(0);
     final HashMap<String, Set<String>> _viewTables = new HashMap<String, Set<String>>(0);
-    return new InvalidationTracker(this, _shadowTablesMap, _viewTables, "book_table");
+    return new InvalidationTracker(this, _shadowTablesMap, _viewTables, "cat_table");
   }
 
   @Override
@@ -119,7 +121,7 @@ public final class AppRoomDatabase_Impl extends AppRoomDatabase {
     final SupportSQLiteDatabase _db = super.getOpenHelper().getWritableDatabase();
     try {
       super.beginTransaction();
-      _db.execSQL("DELETE FROM `book_table`");
+      _db.execSQL("DELETE FROM `cat_table`");
       super.setTransactionSuccessful();
     } finally {
       super.endTransaction();
@@ -134,7 +136,7 @@ public final class AppRoomDatabase_Impl extends AppRoomDatabase {
   @NonNull
   protected Map<Class<?>, List<Class<?>>> getRequiredTypeConverters() {
     final HashMap<Class<?>, List<Class<?>>> _typeConvertersMap = new HashMap<Class<?>, List<Class<?>>>();
-    _typeConvertersMap.put(IBookDao.class, IBookDao_Impl.getRequiredConverters());
+    _typeConvertersMap.put(ICatDao.class, ICatDao_Impl.getRequiredConverters());
     return _typeConvertersMap;
   }
 
@@ -154,15 +156,15 @@ public final class AppRoomDatabase_Impl extends AppRoomDatabase {
   }
 
   @Override
-  public IBookDao bookDao() {
-    if (_iBookDao != null) {
-      return _iBookDao;
+  public ICatDao catDao() {
+    if (_iCatDao != null) {
+      return _iCatDao;
     } else {
       synchronized(this) {
-        if(_iBookDao == null) {
-          _iBookDao = new IBookDao_Impl(this);
+        if(_iCatDao == null) {
+          _iCatDao = new ICatDao_Impl(this);
         }
-        return _iBookDao;
+        return _iCatDao;
       }
     }
   }
